@@ -66,7 +66,7 @@ export default function JobsPage() {
         <div className="mb-8">
           <h1 className="text-4xl font-bold text-secondary-700 mb-4">Join Our Team</h1>
           <p className="text-lg text-secondary-400 max-w-3xl">
-            Discover exciting career opportunities at TechCorp. We're looking for talented individuals to help us build the future of technology.
+            Discover exciting career opportunities at Direct Mortgage. We're looking for talented individuals to help us provide exceptional mortgage lending services to our clients.
           </p>
         </div>
 
