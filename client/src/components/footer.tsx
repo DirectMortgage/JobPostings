@@ -1,4 +1,5 @@
 import { Building, Linkedin, Twitter, Github, Mail, Phone, MapPin } from "lucide-react";
+import logoImage from "@assets/New Direct Mortgage.png";
 
 export default function Footer() {
   return (
@@ -8,13 +9,14 @@ export default function Footer() {
           {/* Company Info */}
           <div className="md:col-span-1">
             <div className="flex items-center mb-4">
-              <div className="w-8 h-8 bg-primary-500 rounded-lg flex items-center justify-center mr-3">
-                <Building className="text-white" size={16} />
-              </div>
-              <span className="text-xl font-bold">TechCorp</span>
+              <img 
+                src={logoImage} 
+                alt="New Direct Mortgage" 
+                className="h-8 w-auto filter brightness-0 invert"
+              />
             </div>
             <p className="text-gray-300 text-sm mb-4">
-              Building the future of technology with innovative solutions and exceptional talent.
+              Your trusted partner in mortgage lending with innovative solutions and exceptional service.
             </p>
             <div className="flex space-x-4">
               <a href="#" className="text-gray-300 hover:text-primary-400 transition-colors">

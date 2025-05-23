@@ -1,5 +1,6 @@
 import { Link, useLocation } from "wouter";
 import { Building } from "lucide-react";
+import logoImage from "@assets/New Direct Mortgage.png";
 
 export default function Header() {
   const [location] = useLocation();
@@ -18,10 +19,11 @@ export default function Header() {
           <div className="flex-shrink-0">
             <Link href="/">
               <div className="flex items-center cursor-pointer">
-                <div className="w-8 h-8 bg-primary-500 rounded-lg flex items-center justify-center mr-3">
-                  <Building className="text-white" size={16} />
-                </div>
-                <span className="text-xl font-bold text-secondary-700">TechCorp</span>
+                <img 
+                  src={logoImage} 
+                  alt="New Direct Mortgage" 
+                  className="h-10 w-auto"
+                />
               </div>
             </Link>
           </div>
