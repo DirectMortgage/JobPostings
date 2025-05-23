@@ -1,5 +1,6 @@
 import { Link, useLocation } from "wouter";
 import { Building } from "lucide-react";
+import { Button } from "@/components/ui/button";
 import logoImage from "@assets/New Direct Mortgage.png";
 
 export default function Header() {
@@ -43,7 +44,9 @@ export default function Header() {
               </span>
             </Link>
             <a href="#" className="text-secondary-400 hover:text-primary-500 px-3 py-2 text-sm font-medium transition-colors">Make a Payment</a>
-            <a href="#" className="text-secondary-400 hover:text-primary-500 px-3 py-2 text-sm font-medium transition-colors">Login</a>
+            <Button variant="default" size="sm" className="bg-primary-500 hover:bg-primary-600 text-white">
+              Login
+            </Button>
           </nav>
 
           {/* Mobile menu button */}
