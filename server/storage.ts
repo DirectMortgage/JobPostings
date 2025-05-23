@@ -77,16 +77,16 @@ export class MemStorage implements IStorage {
         postedDate: "3 days ago"
       },
       {
-        title: "Marketing Specialist",
-        department: "marketing",
-        location: "austin",
+        title: "Branch Manager",
+        department: "management",
+        location: "san-francisco",
         type: "full-time",
-        salary: "$70,000 - $90,000",
-        summary: "Drive marketing campaigns and content strategy to increase brand awareness and customer acquisition. Experience with digital marketing tools required.",
-        description: "Join our marketing team to help grow our brand and drive customer acquisition through innovative campaigns and content strategies.",
-        requirements: "• 2+ years of digital marketing experience\n• Experience with marketing automation tools\n• Strong writing and content creation skills\n• Knowledge of SEO and SEM best practices\n• Analytics and data-driven mindset",
-        niceToHave: "• Experience with HubSpot or similar CRM\n• Social media marketing experience\n• Graphic design skills\n• Previous B2B marketing experience",
-        postedDate: "5 days ago"
+        salary: "$80,000 - $120,000",
+        summary: "Under the direction of Senior Management, the Branch Manager is responsible for planning, directing and controlling the operation of the loan production and working in conjunction with the Director of Marketing to establish marketing functions of the branch.",
+        description: "The Branch Manager is responsible for planning, directing and controlling the operation of the loan production and working in conjunction with the Director of Marketing to establish marketing functions of the branch. Develop and implement strategies to generate loans from Real Estate Companies, Builders, Relocation Companies and the Public. Recruit, hire & train and supervise Loan Officers and individuals involved in the loan production functions.",
+        requirements: "• Minimum of 4 years College\n• At least 10 years of experience in Sales or Sales Management\n• Strong written and verbal skills required\n• Licensed to originate loans\n• Must be able to work in a normal office environment\n• Ability to lift up to 20 pounds occasionally",
+        niceToHave: "• Previous mortgage industry management experience\n• Experience with loan officer training and development\n• Knowledge of mortgage finance products\n• Experience with marketing material development",
+        postedDate: "3 days ago"
       },
       {
         title: "Sales Representative",

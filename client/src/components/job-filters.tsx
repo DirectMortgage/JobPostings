@@ -42,6 +42,8 @@ export default function JobFilters({ onFilterChange }: JobFiltersProps) {
                 <SelectItem value="product">Product</SelectItem>
                 <SelectItem value="marketing">Marketing</SelectItem>
                 <SelectItem value="sales">Sales</SelectItem>
+                <SelectItem value="management">Management</SelectItem>
+                <SelectItem value="operations">Operations</SelectItem>
               </SelectContent>
             </Select>
           </div>

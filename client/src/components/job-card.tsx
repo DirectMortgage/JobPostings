@@ -18,6 +18,8 @@ const getDepartmentIcon = (department: string) => {
     case "product": return "📈";
     case "marketing": return "📢";
     case "sales": return "🤝";
+    case "management": return "👔";
+    case "operations": return "⚙️";
     default: return "🏢";
   }
 };
@@ -29,6 +31,8 @@ const getDepartmentColor = (department: string) => {
     case "product": return "bg-green-100 text-green-500";
     case "marketing": return "bg-yellow-100 text-yellow-600";
     case "sales": return "bg-orange-100 text-orange-500";
+    case "management": return "bg-indigo-100 text-indigo-500";
+    case "operations": return "bg-teal-100 text-teal-500";
     default: return "bg-gray-100 text-gray-500";
   }
 };
