@@ -101,16 +101,16 @@ export class MemStorage implements IStorage {
         postedDate: "1 week ago"
       },
       {
-        title: "Software Engineering Intern",
-        department: "engineering",
+        title: "Processor",
+        department: "operations",
         location: "san-francisco",
-        type: "internship",
-        salary: "$25/hour",
-        summary: "Summer internship opportunity for computer science students. Work on real projects with our engineering team and gain valuable industry experience.",
-        description: "Join our summer internship program and gain hands-on experience working on real products that impact millions of users.",
-        requirements: "• Currently pursuing CS or related degree\n• Strong programming fundamentals\n• Knowledge of at least one programming language\n• Problem-solving and analytical skills\n• Eagerness to learn and grow",
-        niceToHave: "• Previous internship experience\n• Personal or academic projects\n• Open source contributions\n• Knowledge of web technologies",
-        postedDate: "4 days ago"
+        type: "full-time",
+        salary: "$45,000 - $55,000",
+        summary: "The Loan Processor is responsible for processing loan applications in compliance with mortgage lending and applicable investor guidelines. Manage pipeline, submit files to underwriting, and support loan officer teams.",
+        description: "The Loan Processor is responsible for processing loan applications in compliance with mortgage lending and applicable investor guidelines. Performs duties such as analyzing the loan application, assessing creditworthiness and the likelihood that a loan applicant will be able to repay the debt, analyzing the AUS/Guidelines as they pertain to the loan product and sales structure, reviewing title commitments and fees, ordering subordinations and allocating fees properly in the system. Responsible for monitoring the loan process and managing the proper expectations with the client and the sales staff through closing.",
+        requirements: "• High school diploma or equivalent\n• Must be able to work 40 hours per week and overtime as required\n• Must be proficient in Word, Excel and Outlook applications\n• Proficient in DU/DO, LP, & major Origination systems\n• Must have excellent verbal and written communication skills\n• Must have a positive attitude\n• Must be dependable, self-motivated and require minimal supervision\n• Proficient with major correspondent and wholesale channels and their guidelines",
+        niceToHave: "• Previous mortgage industry experience\n• Knowledge of underwriting standards\n• Experience with loan processing software\n• Familiarity with compliance requirements",
+        postedDate: "1 day ago"
       }
     ];
 
