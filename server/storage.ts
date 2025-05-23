@@ -123,6 +123,18 @@ export class MemStorage implements IStorage {
         requirements: "• Bachelor's degree in Human Resources, Business Administration, or related field\n• 7+ years of experience in employee experience, HR leadership, or organizational development\n• Proven track record in building and scaling onboarding programs\n• Experience with branding and marketing strategy development\n• Strong leadership and team management skills\n• Excellent communication and interpersonal abilities\n• Experience with employee retention and engagement initiatives",
         niceToHave: "• Experience in the mortgage or financial services industry\n• Background in startup or high-growth company environments\n• Knowledge of HR technology and employee engagement platforms\n• Experience with social media strategy and brand development",
         postedDate: "2 days ago"
+      },
+      {
+        title: "National Recruiter",
+        department: "management",
+        location: "dallas",
+        type: "full-time",
+        salary: "$36,000 - $80,000 + Bonus & Override",
+        summary: "The National Recruiter will be responsible for working with the Head of National Retail Lending to strategically manage corporate growth by adding Loan Officers and Branches Nationally. Work with the Head of Training and corporate management team to maximize workflow efficiencies.",
+        description: "Solicit and interview retail branches who meet Direct Mortgage standards for hire with minimum annualized branch production $36M or 160 units. Solicit and interview individual loan officer candidates who meet Direct Mortgage standards for hire with minimum annualized loan officer production $8M or 36 units. Recruiting expectations are $200M in annualized production total. Adhere to documented Direct Mortgage policies and procedures including hiring and transition process, budgeting and forecasting abilities.",
+        requirements: "• At least 5 years mortgage banking experience with a built book of business/candidates\n• Effective communication skills for expressing ideas to individuals and groups\n• Must be proficient in Word, Excel, and Outlook applications\n• Must have a positive attitude and be dependable, self-motivated\n• Working knowledge of industry related trade associations (Realtor, Homebuilder, Mortgage Banking groups)\n• Successful background in business planning, budgeting and industry specific software\n• Well groomed and business professional at all times\n• Willing to travel as needed",
+        niceToHave: "• Experience with loan officer recruitment and retention\n• Knowledge of mortgage production metrics and standards\n• Background in corporate growth strategy\n• Experience with branch management relationships",
+        postedDate: "3 days ago"
       }
     ];
 
