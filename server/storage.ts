@@ -65,16 +65,16 @@ export class MemStorage implements IStorage {
         postedDate: "1 week ago"
       },
       {
-        title: "Product Manager",
-        department: "product",
-        location: "new-york",
+        title: "Branch Operations Manager",
+        department: "operations",
+        location: "remote",
         type: "full-time",
-        salary: "$130,000 - $170,000",
-        summary: "Lead product strategy and execution for our core platform. Work cross-functionally to define roadmaps and deliver features that delight customers.",
-        description: "We're looking for an experienced Product Manager to drive the vision and execution of our core product offerings.",
-        requirements: "• 4+ years of product management experience\n• Experience with agile development methodologies\n• Strong analytical and problem-solving skills\n• Excellent communication and leadership abilities\n• Experience working with engineering and design teams",
-        niceToHave: "• Technical background or CS degree\n• Experience with B2B SaaS products\n• Data analysis and SQL skills\n• Previous startup experience",
-        postedDate: "3 days ago"
+        salary: "$75,000 - $95,000",
+        summary: "We are seeking a dynamic and detail-oriented Branch Operations Manager to oversee and streamline mortgage operations within a designated region. This role is pivotal in ensuring a seamless loan process from setup through closing.",
+        description: "Lead and manage all operational aspects of mortgage loan processing, including loan setup, processing, underwriting support, closing, and funding, across the assigned region. Provide day-to-day guidance, mentorship, and performance management to regional operations staff including processors, closers, and support roles. Champion a borrower-first mindset by removing bottlenecks, solving operational issues quickly, and driving efficiency to support a smooth and professional client journey.",
+        requirements: "• 5+ years of mortgage operations experience with a strong understanding of the full loan lifecycle\n• 2+ years in a leadership or management role within mortgage operations\n• Proven ability to lead and develop teams in a fast-paced, deadline-driven environment\n• Excellent organizational and problem-solving skills\n• Strong interpersonal and communication skills (written and verbal)\n• Tech-savvy with familiarity in LOS platforms (e.g., Encompass) and other mortgage software\n• High attention to detail and commitment to delivering exceptional service",
+        niceToHave: "• Experience with appraisal coordination and escalations\n• Knowledge of compliance standards and regulatory requirements\n• Previous experience in training and development\n• Background in workflow management and process optimization",
+        postedDate: "2 days ago"
       },
       {
         title: "Branch Manager",
