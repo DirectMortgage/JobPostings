@@ -89,16 +89,16 @@ export class MemStorage implements IStorage {
         postedDate: "3 days ago"
       },
       {
-        title: "Sales Representative",
+        title: "Mortgage Loan Originator",
         department: "sales",
         location: "remote",
         type: "full-time",
-        salary: "$60,000 + Commission",
-        summary: "Build relationships with prospective customers and drive revenue growth. Strong communication skills and sales experience preferred.",
-        description: "We're seeking a motivated Sales Representative to join our growing sales team and help drive revenue growth.",
-        requirements: "• 2+ years of B2B sales experience\n• Excellent communication and interpersonal skills\n• CRM experience (Salesforce, HubSpot, etc.)\n• Goal-oriented with a track record of meeting targets\n• Bachelor's degree preferred",
-        niceToHave: "• SaaS or technology sales experience\n• Previous experience in a startup environment\n• Knowledge of consultative selling techniques\n• Multilingual capabilities",
-        postedDate: "1 week ago"
+        salary: "Commission-only",
+        summary: "As a Mortgage Loan Originator (MLO) with Direct Mortgage, you will be responsible for sourcing and originating mortgage loan applications. Your role will focus on developing strong relationships with clients, referral partners, and industry professionals to generate new business.",
+        description: "Conduct outside sales activities including client meetings, cold calls, and networking with referral sources such as real estate agents, builders, and financial professionals. Develop and maintain a pipeline of new business through ongoing relationship management and community engagement. Assess client financial profiles and recommend appropriate mortgage products. Guide clients through the loan application process from start to finish, ensuring a smooth and positive experience.",
+        requirements: "• High school diploma or equivalent required\n• Minimum 1 year of experience as a Mortgage Loan Originator at a mortgage lender, bank, or financial institution\n• Proven success in generating both refinance and purchase loans\n• Solid understanding of mortgage lending guidelines including FHA, VA, USDA, FNMA, and FHLMC\n• Strong sales and relationship-building skills with a proactive, client-first approach\n• Working knowledge of federal real estate lending regulations and Fair Lending practices\n• Must possess an active NMLS license",
+        niceToHave: "• Experience with real estate agent relationships\n• Knowledge of local market conditions\n• Experience with community networking and events\n• Background in financial services or banking",
+        postedDate: "5 days ago"
       },
       {
         title: "Processor",
