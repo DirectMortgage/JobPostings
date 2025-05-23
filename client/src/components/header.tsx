@@ -30,9 +30,9 @@ export default function Header() {
           
           {/* Desktop Navigation */}
           <nav className="hidden md:flex space-x-8">
-            <a href="#" className="text-secondary-400 hover:text-primary-500 px-3 py-2 text-sm font-medium transition-colors">Home</a>
-            <a href="#" className="text-secondary-400 hover:text-primary-500 px-3 py-2 text-sm font-medium transition-colors">About</a>
-            <a href="#" className="text-secondary-400 hover:text-primary-500 px-3 py-2 text-sm font-medium transition-colors">Services</a>
+            <a href="#" className="text-secondary-400 hover:text-primary-500 px-3 py-2 text-sm font-medium transition-colors">Buy a Home</a>
+            <a href="#" className="text-secondary-400 hover:text-primary-500 px-3 py-2 text-sm font-medium transition-colors">Refinance</a>
+            <a href="#" className="text-secondary-400 hover:text-primary-500 px-3 py-2 text-sm font-medium transition-colors">Find a Loan Officer</a>
             <Link href="/jobs">
               <span className={`px-3 py-2 text-sm font-medium transition-colors cursor-pointer ${
                 isActive("/jobs") || isActive("/") 
@@ -42,16 +42,8 @@ export default function Header() {
                 Careers
               </span>
             </Link>
-            <a href="#" className="text-secondary-400 hover:text-primary-500 px-3 py-2 text-sm font-medium transition-colors">Contact</a>
-            <Link href="/admin">
-              <span className={`px-3 py-2 text-sm font-medium transition-colors cursor-pointer ${
-                isActive("/admin") 
-                  ? "text-primary-500 border-b-2 border-primary-500" 
-                  : "text-secondary-400 hover:text-primary-500"
-              }`}>
-                Admin
-              </span>
-            </Link>
+            <a href="#" className="text-secondary-400 hover:text-primary-500 px-3 py-2 text-sm font-medium transition-colors">Make a Payment</a>
+            <a href="#" className="text-secondary-400 hover:text-primary-500 px-3 py-2 text-sm font-medium transition-colors">Login</a>
           </nav>
 
           {/* Mobile menu button */}
