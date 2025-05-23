@@ -160,7 +160,7 @@ export class MemStorage implements IStorage {
   }
 
   async getAllJobs(): Promise<Job[]> {
-    return Array.from(this.jobs.values()).reverse(); // Return newest first
+    return Array.from(this.jobs.values()); // Return in order
   }
 
   async getJobById(id: number): Promise<Job | undefined> {
@@ -203,7 +203,7 @@ export class MemStorage implements IStorage {
       if (filters.location && job.location !== filters.location) return false;
       if (filters.type && job.type !== filters.type) return false;
       return true;
-    }).reverse(); // Return newest first
+    }); // Return in order
   }
 }
 
