@@ -21,8 +21,8 @@ export default function Header() {
               <div className="flex items-center cursor-pointer">
                 <img 
                   src={logoImage} 
-                  alt="New Direct Mortgage" 
-                  className="h-10 w-auto"
+                  alt="Direct Mortgage" 
+                  className="h-12 w-auto"
                 />
               </div>
             </Link>

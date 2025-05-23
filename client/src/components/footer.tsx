@@ -11,7 +11,7 @@ export default function Footer() {
             <div className="flex items-center mb-4">
               <img 
                 src={logoImage} 
-                alt="New Direct Mortgage" 
+                alt="Direct Mortgage" 
                 className="h-8 w-auto filter brightness-0 invert"
               />
             </div>
@@ -59,7 +59,7 @@ export default function Footer() {
             <div className="space-y-2 text-sm text-gray-300">
               <div className="flex items-center">
                 <Mail className="w-4 h-4 mr-2" />
-                <span>careers@techcorp.com</span>
+                <span>careers@directmortgage.com</span>
               </div>
               <div className="flex items-center">
                 <Phone className="w-4 h-4 mr-2" />
@@ -67,7 +67,7 @@ export default function Footer() {
               </div>
               <div className="flex items-start">
                 <MapPin className="w-4 h-4 mr-2 mt-1" />
-                <span>123 Tech Street<br />San Francisco, CA 94105</span>
+                <span>123 Mortgage Lane<br />San Francisco, CA 94105</span>
               </div>
             </div>
           </div>
@@ -76,7 +76,7 @@ export default function Footer() {
         {/* Bottom Bar */}
         <div className="border-t border-secondary-500 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center">
           <div className="text-sm text-gray-300">
-            © 2024 TechCorp. All rights reserved.
+            © 2024 Direct Mortgage. All rights reserved.
           </div>
           <div className="flex space-x-6 mt-4 md:mt-0">
             <a href="#" className="text-sm text-gray-300 hover:text-primary-400 transition-colors">Privacy Policy</a>
