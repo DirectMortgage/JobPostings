@@ -111,6 +111,18 @@ export class MemStorage implements IStorage {
         requirements: "• High school diploma or equivalent\n• Must be able to work 40 hours per week and overtime as required\n• Must be proficient in Word, Excel and Outlook applications\n• Proficient in DU/DO, LP, & major Origination systems\n• Must have excellent verbal and written communication skills\n• Must have a positive attitude\n• Must be dependable, self-motivated and require minimal supervision\n• Proficient with major correspondent and wholesale channels and their guidelines",
         niceToHave: "• Previous mortgage industry experience\n• Knowledge of underwriting standards\n• Experience with loan processing software\n• Familiarity with compliance requirements",
         postedDate: "1 day ago"
+      },
+      {
+        title: "Director of Employee Experience",
+        department: "management",
+        location: "dallas",
+        type: "full-time",
+        salary: "$95,000 - $125,000",
+        summary: "As the Director of Employee Experience, you will play a foundational role in shaping our company's long-term success. This position is critical for building and refining the company's onboarding, brand identity, employee retention, and culture strategy.",
+        description: "Build and execute a high-level onboarding and transition workflow for new employees. Establish the company's branding and social media strategy, hiring the right team to scale and execute. Implement and oversee employee retention initiatives, tracking engagement and gathering feedback. Lead and oversee Onboarding, Marketing, Retention, and Branding departments. Create an internal feedback loop to continually optimize the employee experience and engagement. Collaborate with leadership on benefits, events, and company-wide growth strategies.",
+        requirements: "• Bachelor's degree in Human Resources, Business Administration, or related field\n• 7+ years of experience in employee experience, HR leadership, or organizational development\n• Proven track record in building and scaling onboarding programs\n• Experience with branding and marketing strategy development\n• Strong leadership and team management skills\n• Excellent communication and interpersonal abilities\n• Experience with employee retention and engagement initiatives",
+        niceToHave: "• Experience in the mortgage or financial services industry\n• Background in startup or high-growth company environments\n• Knowledge of HR technology and employee engagement platforms\n• Experience with social media strategy and brand development",
+        postedDate: "2 days ago"
       }
     ];
 
