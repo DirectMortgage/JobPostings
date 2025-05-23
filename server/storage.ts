@@ -41,16 +41,16 @@ export class MemStorage implements IStorage {
   private async seedJobs() {
     const sampleJobs = [
       {
-        title: "Senior Software Engineer",
-        department: "engineering",
-        location: "san-francisco",
+        title: "Licensed Loan Partner (Qualification Specialist)",
+        department: "operations",
+        location: "remote",
         type: "full-time",
-        salary: "$120,000 - $160,000",
-        summary: "Join our engineering team to build scalable web applications using React, Node.js, and cloud technologies. You'll work on cutting-edge projects that impact millions of users.",
-        description: "We're looking for a Senior Software Engineer to join our growing engineering team. You'll be responsible for designing and implementing scalable web applications that serve millions of users worldwide.",
-        requirements: "• 5+ years of experience in software development\n• Strong proficiency in React, Node.js, and modern JavaScript\n• Experience with cloud platforms (AWS, Azure, or GCP)\n• Understanding of database design and optimization\n• Bachelor's degree in Computer Science or related field",
-        niceToHave: "• Experience with TypeScript and GraphQL\n• Knowledge of containerization (Docker, Kubernetes)\n• Previous experience in a startup environment\n• Contributions to open-source projects",
-        postedDate: "2 days ago"
+        salary: "$55,000 - $75,000",
+        summary: "The Loan Partner II (LP2) plays a critical role in the mortgage loan process, ensuring a smooth and timely experience from initial application through funding. This position is responsible for accurately prequalifying borrowers, managing pre-approval processes, and overseeing the progress of all loans within the committed pipeline.",
+        description: "Contact all new borrower applicants within 24 hours of assignment and review complete 1003 applications. Accurately issue pre-approvals and pre-approval addenda while handling loan scenario inquiries. Expedite onboarding of new contracts with timely Rate Lock Consultations and lead Tuesday update calls with borrowers. Perform daily pipeline reviews to identify and resolve choke points, coordinate communications around key deadlines, and ensure 95%+ of loans close on or before contract date.",
+        requirements: "• Active and current NMLS license required\n• Minimum 5 years of mortgage experience (processing, underwriting, or origination)\n• Proficient with DU/DO, LP, and major investor guidelines\n• Experience with loan origination systems (e.g., Encompass, Calyx Point)\n• Skilled in Microsoft Office Suite (Word, Excel, PowerPoint, Outlook, OneNote)\n• Strong written and verbal communication skills\n• Exceptional time management, organizational skills, and attention to detail\n• Ability to perform under pressure and meet deadlines",
+        niceToHave: "• Experience with real estate agent relationships\n• Knowledge of investor guidelines and program updates\n• Background in client relationship management\n• Experience with pipeline management systems",
+        postedDate: "6 days ago"
       },
       {
         title: "Regional Sales Manager",
