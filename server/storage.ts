@@ -1,0 +1,196 @@
+import { users, jobs, type User, type InsertUser, type Job, type InsertJob, type UpdateJob } from "@shared/schema";
+
+export interface IStorage {
+  getUser(id: number): Promise<User | undefined>;
+  getUserByUsername(username: string): Promise<User | undefined>;
+  createUser(user: InsertUser): Promise<User>;
+  
+  // Job management
+  getAllJobs(): Promise<Job[]>;
+  getJobById(id: number): Promise<Job | undefined>;
+  createJob(job: InsertJob): Promise<Job>;
+  updateJob(id: number, job: Partial<UpdateJob>): Promise<Job | undefined>;
+  deleteJob(id: number): Promise<boolean>;
+  getJobsByFilter(filters: { department?: string; location?: string; type?: string }): Promise<Job[]>;
+}
+
+export class MemStorage implements IStorage {
+  private users: Map<number, User>;
+  private jobs: Map<number, Job>;
+  private currentUserId: number;
+  private currentJobId: number;
+
+  constructor() {
+    this.users = new Map();
+    this.jobs = new Map();
+    this.currentUserId = 1;
+    this.currentJobId = 1;
+
+    // Create default admin user
+    this.createUser({
+      username: "admin",
+      password: "admin123"
+    }).then(user => {
+      this.users.set(user.id, { ...user, isAdmin: "true" });
+    });
+
+    // Create some initial job postings
+    this.seedJobs();
+  }
+
+  private async seedJobs() {
+    const sampleJobs = [
+      {
+        title: "Senior Software Engineer",
+        department: "engineering",
+        location: "san-francisco",
+        type: "full-time",
+        salary: "$120,000 - $160,000",
+        summary: "Join our engineering team to build scalable web applications using React, Node.js, and cloud technologies. You'll work on cutting-edge projects that impact millions of users.",
+        description: "We're looking for a Senior Software Engineer to join our growing engineering team. You'll be responsible for designing and implementing scalable web applications that serve millions of users worldwide.",
+        requirements: "• 5+ years of experience in software development\n• Strong proficiency in React, Node.js, and modern JavaScript\n• Experience with cloud platforms (AWS, Azure, or GCP)\n• Understanding of database design and optimization\n• Bachelor's degree in Computer Science or related field",
+        niceToHave: "• Experience with TypeScript and GraphQL\n• Knowledge of containerization (Docker, Kubernetes)\n• Previous experience in a startup environment\n• Contributions to open-source projects",
+        postedDate: "2 days ago"
+      },
+      {
+        title: "UX/UI Designer",
+        department: "design",
+        location: "remote",
+        type: "full-time",
+        salary: "$90,000 - $120,000",
+        summary: "Create intuitive and beautiful user experiences for our web and mobile applications. Collaborate with product and engineering teams to deliver exceptional designs.",
+        description: "We're seeking a talented UX/UI Designer to join our design team and help create exceptional user experiences across our product suite.",
+        requirements: "• 3+ years of UX/UI design experience\n• Proficiency in Figma, Sketch, or similar design tools\n• Strong portfolio demonstrating user-centered design\n• Experience with design systems and component libraries\n• Understanding of web and mobile design principles",
+        niceToHave: "• Experience with prototyping tools\n• Knowledge of HTML/CSS\n• Background in user research\n• Animation and micro-interaction experience",
+        postedDate: "1 week ago"
+      },
+      {
+        title: "Product Manager",
+        department: "product",
+        location: "new-york",
+        type: "full-time",
+        salary: "$130,000 - $170,000",
+        summary: "Lead product strategy and execution for our core platform. Work cross-functionally to define roadmaps and deliver features that delight customers.",
+        description: "We're looking for an experienced Product Manager to drive the vision and execution of our core product offerings.",
+        requirements: "• 4+ years of product management experience\n• Experience with agile development methodologies\n• Strong analytical and problem-solving skills\n• Excellent communication and leadership abilities\n• Experience working with engineering and design teams",
+        niceToHave: "• Technical background or CS degree\n• Experience with B2B SaaS products\n• Data analysis and SQL skills\n• Previous startup experience",
+        postedDate: "3 days ago"
+      },
+      {
+        title: "Marketing Specialist",
+        department: "marketing",
+        location: "austin",
+        type: "full-time",
+        salary: "$70,000 - $90,000",
+        summary: "Drive marketing campaigns and content strategy to increase brand awareness and customer acquisition. Experience with digital marketing tools required.",
+        description: "Join our marketing team to help grow our brand and drive customer acquisition through innovative campaigns and content strategies.",
+        requirements: "• 2+ years of digital marketing experience\n• Experience with marketing automation tools\n• Strong writing and content creation skills\n• Knowledge of SEO and SEM best practices\n• Analytics and data-driven mindset",
+        niceToHave: "• Experience with HubSpot or similar CRM\n• Social media marketing experience\n• Graphic design skills\n• Previous B2B marketing experience",
+        postedDate: "5 days ago"
+      },
+      {
+        title: "Sales Representative",
+        department: "sales",
+        location: "remote",
+        type: "full-time",
+        salary: "$60,000 + Commission",
+        summary: "Build relationships with prospective customers and drive revenue growth. Strong communication skills and sales experience preferred.",
+        description: "We're seeking a motivated Sales Representative to join our growing sales team and help drive revenue growth.",
+        requirements: "• 2+ years of B2B sales experience\n• Excellent communication and interpersonal skills\n• CRM experience (Salesforce, HubSpot, etc.)\n• Goal-oriented with a track record of meeting targets\n• Bachelor's degree preferred",
+        niceToHave: "• SaaS or technology sales experience\n• Previous experience in a startup environment\n• Knowledge of consultative selling techniques\n• Multilingual capabilities",
+        postedDate: "1 week ago"
+      },
+      {
+        title: "Software Engineering Intern",
+        department: "engineering",
+        location: "san-francisco",
+        type: "internship",
+        salary: "$25/hour",
+        summary: "Summer internship opportunity for computer science students. Work on real projects with our engineering team and gain valuable industry experience.",
+        description: "Join our summer internship program and gain hands-on experience working on real products that impact millions of users.",
+        requirements: "• Currently pursuing CS or related degree\n• Strong programming fundamentals\n• Knowledge of at least one programming language\n• Problem-solving and analytical skills\n• Eagerness to learn and grow",
+        niceToHave: "• Previous internship experience\n• Personal or academic projects\n• Open source contributions\n• Knowledge of web technologies",
+        postedDate: "4 days ago"
+      }
+    ];
+
+    for (const job of sampleJobs) {
+      const { postedDate, ...jobData } = job;
+      await this.createJob(jobData as InsertJob);
+    }
+  }
+
+  async getUser(id: number): Promise<User | undefined> {
+    return this.users.get(id);
+  }
+
+  async getUserByUsername(username: string): Promise<User | undefined> {
+    return Array.from(this.users.values()).find(
+      (user) => user.username === username,
+    );
+  }
+
+  async createUser(insertUser: InsertUser): Promise<User> {
+    const id = this.currentUserId++;
+    const user: User = { ...insertUser, id, isAdmin: "false" };
+    this.users.set(id, user);
+    return user;
+  }
+
+  async getAllJobs(): Promise<Job[]> {
+    return Array.from(this.jobs.values()).sort((a, b) => b.id - a.id);
+  }
+
+  async getJobById(id: number): Promise<Job | undefined> {
+    return this.jobs.get(id);
+  }
+
+  async createJob(job: InsertJob): Promise<Job> {
+    const id = this.currentJobId++;
+    const newJob: Job = {
+      ...job,
+      id,
+      niceToHave: job.niceToHave || null,
+      postedDate: new Date().toLocaleDateString()
+    };
+    this.jobs.set(id, newJob);
+    return newJob;
+  }
+
+  async updateJob(id: number, jobUpdate: Partial<UpdateJob>): Promise<Job | undefined> {
+    const existingJob = this.jobs.get(id);
+    if (!existingJob) return undefined;
+
+    const updatedJob: Job = {
+      ...existingJob,
+      ...jobUpdate,
+      id
+    };
+    this.jobs.set(id, updatedJob);
+    return updatedJob;
+  }
+
+  async deleteJob(id: number): Promise<boolean> {
+    return this.jobs.delete(id);
+  }
+
+  async getJobsByFilter(filters: { department?: string; location?: string; type?: string }): Promise<Job[]> {
+    let jobs = Array.from(this.jobs.values());
+
+    if (filters.department && filters.department !== 'all') {
+      jobs = jobs.filter(job => job.department === filters.department);
+    }
+
+    if (filters.location && filters.location !== 'all') {
+      jobs = jobs.filter(job => job.location === filters.location);
+    }
+
+    if (filters.type && filters.type !== 'all') {
+      jobs = jobs.filter(job => job.type === filters.type);
+    }
+
+    return jobs.sort((a, b) => b.id - a.id);
+  }
+}
+
+export const storage = new MemStorage();
