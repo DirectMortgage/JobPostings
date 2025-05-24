@@ -41,10 +41,12 @@ const formatLocation = (location: string) => {
 };
 
 const formatType = (type: string) => {
+  if (!type) return '';
   return type.split('-').map(word => word.charAt(0).toUpperCase() + word.slice(1)).join('-');
 };
 
 const formatDepartment = (department: string) => {
+  if (!department) return '';
   return department.charAt(0).toUpperCase() + department.slice(1);
 };
 
@@ -143,7 +145,7 @@ export default function JobDetailPage() {
                 <div>
                   <h1 className="text-3xl font-bold text-secondary-700">{job.title}</h1>
                   <p className="text-lg text-secondary-500">
-                    {formatDepartment(job.department)} • {formatType(job.type)} • {formatLocation(job.location)}
+                    {job.department ? formatDepartment(job.department) : ''} • {job.type ? formatType(job.type) : ''} • {job.location ? formatLocation(job.location) : ''}
                   </p>
                 </div>
               </div>
@@ -160,11 +162,11 @@ export default function JobDetailPage() {
 
                   <h2 className="text-xl font-semibold text-secondary-700 mb-4">Requirements</h2>
                   <div className="text-secondary-500 mb-8">
-                    {job.requirements.split('\n').map((req, index) => (
+                    {job.requirements ? job.requirements.split('\n').map((req, index) => (
                       <div key={index} className="mb-2 text-base">
                         {req.startsWith('•') ? req : `• ${req}`}
                       </div>
-                    ))}
+                    )) : null}
                   </div>
 
                   {job.niceToHave && (

@@ -43,10 +43,12 @@ const formatLocation = (location: string) => {
 };
 
 const formatType = (type: string) => {
+  if (!type) return '';
   return type.split('-').map(word => word.charAt(0).toUpperCase() + word.slice(1)).join('-');
 };
 
 const formatDepartment = (department: string) => {
+  if (!department) return '';
   return department.charAt(0).toUpperCase() + department.slice(1);
 };
 
