@@ -45,7 +45,7 @@ export class MemStorage implements IStorage {
         description: "The Loan Processor is responsible for processing loan applications in compliance with mortgage lending and applicable investor guidelines. Performs duties such as analyzing the loan application, assessing creditworthiness and the likelihood that a loan applicant will be able to repay the debt, analyzing the AUS/Guidelines as they pertain to the loan product and sales structure, reviewing title commitments and fees, ordering subordinations and allocating fees properly in the system. Responsible for monitoring the loan process and managing the proper expectations with the client and the sales staff through closing.",
         requirements: "• High school diploma or equivalent\n• Must be able to work 40 hours per week and overtime as required\n• Must be proficient in Word, Excel and Outlook applications\n• Proficient in DU/DO, LP, & major Origination systems\n• Must have excellent verbal and written communication skills\n• Must have a positive attitude\n• Must be dependable, self-motivated and require minimal supervision\n• Proficient with major correspondent and wholesale channels and their guidelines",
         niceToHave: "• Previous mortgage industry experience\n• Knowledge of underwriting standards\n• Experience with loan processing software\n• Familiarity with compliance requirements",
-        postedDate: "1 day ago"
+        postedDate: "May 22, 2025"
       },
       {
         title: "Mortgage Loan Originator",
@@ -57,7 +57,7 @@ export class MemStorage implements IStorage {
         description: "Conduct outside sales activities including client meetings, cold calls, and networking with referral sources such as real estate agents, builders, and financial professionals. Develop and maintain a pipeline of new business through ongoing relationship management and community engagement. Assess client financial profiles and recommend appropriate mortgage products. Guide clients through the loan application process from start to finish, ensuring a smooth and positive experience.",
         requirements: "• High school diploma or equivalent required\n• Minimum 1 year of experience as a Mortgage Loan Originator at a mortgage lender, bank, or financial institution\n• Proven success in generating both refinance and purchase loans\n• Solid understanding of mortgage lending guidelines including FHA, VA, USDA, FNMA, and FHLMC\n• Strong sales and relationship-building skills with a proactive, client-first approach\n• Working knowledge of federal real estate lending regulations and Fair Lending practices\n• Must possess an active NMLS license",
         niceToHave: "• Experience with real estate agent relationships\n• Knowledge of local market conditions\n• Experience with community networking and events\n• Background in financial services or banking",
-        postedDate: "5 days ago"
+        postedDate: "May 18, 2025"
       },
       {
         title: "Branch Manager",
@@ -69,7 +69,7 @@ export class MemStorage implements IStorage {
         description: "The Branch Manager is responsible for the overall management and performance of the branch, including sales production, operational efficiency, and team development. This role requires strong leadership skills and the ability to drive results while maintaining high standards of customer service and regulatory compliance.",
         requirements: "• Minimum of 4 years College\n• At least 10 years of experience in Sales or Sales Management\n• Strong written and verbal skills required\n• Licensed to originate loans\n• Must be able to work in a normal office environment\n• Ability to lift up to 20 pounds occasionally",
         niceToHave: "• Previous mortgage industry management experience\n• Experience with loan officer training and development\n• Knowledge of mortgage finance products\n• Experience with marketing material development",
-        postedDate: "3 days ago"
+        postedDate: "May 20, 2025"
       },
       {
         title: "Branch Operations Manager",
@@ -81,7 +81,7 @@ export class MemStorage implements IStorage {
         description: "Oversee daily operations of multiple branch locations and ensure efficient workflow management across the region. Coordinate with underwriting, processing, and closing departments to maintain optimal loan processing timelines. Develop and implement operational procedures to improve efficiency and customer satisfaction. Monitor branch performance metrics and provide guidance to branch staff. Ensure compliance with company policies and regulatory requirements.",
         requirements: "• 5+ years of experience in mortgage operations or branch management\n• Strong understanding of mortgage loan processing and underwriting\n• Experience with LOS platforms (Encompass preferred)\n• Excellent leadership and communication skills\n• Knowledge of regulatory compliance requirements\n• Bachelor's degree preferred\n• Ability to manage multiple locations and teams",
         niceToHave: "• Previous mortgage operations management experience\n• Experience with process improvement initiatives\n• Knowledge of mortgage finance products\n• Experience with performance metrics and reporting",
-        postedDate: "2 weeks ago"
+        postedDate: "May 9, 2025"
       },
       {
         title: "National Recruiter",
@@ -93,7 +93,7 @@ export class MemStorage implements IStorage {
         description: "Solicit and interview retail branches who meet Direct Mortgage standards for hire with minimum annualized branch production $36M or 160 units. Solicit and interview individual loan officer candidates who meet Direct Mortgage standards for hire with minimum annualized loan officer production $8M or 36 units. Recruiting expectations are $200M in annualized production total. Adhere to documented Direct Mortgage policies and procedures including hiring and transition process, budgeting and forecasting abilities.",
         requirements: "• At least 5 years mortgage banking experience with a built book of business/candidates\n• Effective communication skills for expressing ideas to individuals and groups\n• Must be proficient in Word, Excel, and Outlook applications\n• Must have a positive attitude and be dependable, self-motivated\n• Working knowledge of industry related trade associations (Realtor, Homebuilder, Mortgage Banking groups)\n• Successful background in business planning, budgeting and industry specific software\n• Well groomed and business professional at all times\n• Willing to travel as needed",
         niceToHave: "• Experience with loan officer recruitment and retention\n• Knowledge of mortgage production metrics and standards\n• Background in corporate growth strategy\n• Experience with branch management relationships",
-        postedDate: "3 days ago"
+        postedDate: "May 20, 2025"
       },
       {
         title: "Regional Sales Manager",
@@ -105,7 +105,7 @@ export class MemStorage implements IStorage {
         description: "Lead all sales training efforts within the branch, including onboarding, ongoing education, and performance coaching. Serve as a daily resource of knowledge, encouragement, and accountability for all licensed sales staff. Ensure all incoming leads are promptly assigned to a qualified team member and followed up with in a timely manner. Maintain active mortgage licensing and originate residential mortgage loans under your own name, contributing directly to branch production.",
         requirements: "• Active NMLS license with the ability to originate loans\n• Proven experience in mortgage sales, including client-facing origination\n• Strong understanding of residential mortgage products and regulations\n• Exceptional communication, coaching, and interpersonal skills\n• Highly organized with strong time management abilities and attention to detail\n• Passionate about delivering a high-touch, high-value client experience",
         niceToHave: "• Prior leadership or training experience\n• Experience with lead management systems\n• Knowledge of current market conditions and lending guidelines\n• Background in team development and mentoring",
-        postedDate: "4 days ago"
+        postedDate: "May 19, 2025"
       },
       {
         title: "Licensed Loan Partner (Qualification Specialist)",
@@ -117,7 +117,7 @@ export class MemStorage implements IStorage {
         description: "Contact all new borrower applicants within 24 hours of assignment and review complete 1003 applications. Accurately issue pre-approvals and pre-approval addenda while handling loan scenario inquiries. Expedite onboarding of new contracts with timely Rate Lock Consultations and lead Tuesday update calls with borrowers. Perform daily pipeline reviews to identify and resolve choke points, coordinate communications around key deadlines, and ensure 95%+ of loans close on or before contract date.",
         requirements: "• Active and current NMLS license required\n• Minimum 5 years of mortgage experience (processing, underwriting, or origination)\n• Proficient with DU/DO, LP, and major investor guidelines\n• Experience with loan origination systems (e.g., Encompass, Calyx Point)\n• Skilled in Microsoft Office Suite (Word, Excel, PowerPoint, Outlook, OneNote)\n• Strong written and verbal communication skills\n• Exceptional time management, organizational skills, and attention to detail\n• Ability to perform under pressure and meet deadlines",
         niceToHave: "• Experience with real estate agent relationships\n• Knowledge of investor guidelines and program updates\n• Background in client relationship management\n• Experience with pipeline management systems",
-        postedDate: "6 days ago"
+        postedDate: "May 17, 2025"
       },
       {
         title: "Director of Employee Experience",
@@ -129,7 +129,7 @@ export class MemStorage implements IStorage {
         description: "Build and execute a high-level onboarding and transition workflow for new employees. Establish the company's branding and social media strategy, hiring the right team to scale and execute. Implement and oversee employee retention initiatives, tracking engagement and gathering feedback. Lead and oversee Onboarding, Marketing, Retention, and Branding departments. Create an internal feedback loop to continually optimize the employee experience and engagement. Collaborate with leadership on benefits, events, and company-wide growth strategies.",
         requirements: "• Bachelor's degree in Human Resources, Business Administration, or related field\n• 7+ years of experience in employee experience, HR leadership, or organizational development\n• Proven track record in building and scaling onboarding programs\n• Experience with branding and marketing strategy development\n• Strong leadership and team management skills\n• Excellent communication and interpersonal abilities\n• Experience with employee retention and engagement initiatives",
         niceToHave: "• Experience in the mortgage or financial services industry\n• Background in startup or high-growth company environments\n• Knowledge of HR technology and employee engagement platforms\n• Experience with social media strategy and brand development",
-        postedDate: "2 days ago"
+        postedDate: "May 21, 2025"
       }
     ];
 
