@@ -65,9 +65,9 @@ export class MemStorage implements IStorage {
         location: "san-francisco",
         type: "full-time",
         salary: "$80,000 - $110,000",
-        summary: "Lead and manage all aspects of branch operations including sales, operations, and staff development. Drive branch performance and ensure exceptional customer service delivery.",
-        description: "The Branch Manager is responsible for the overall management and performance of the branch, including sales production, operational efficiency, and team development. This role requires strong leadership skills and the ability to drive results while maintaining high standards of customer service and regulatory compliance.",
-        requirements: "• Minimum of 4 years College\n• At least 10 years of experience in Sales or Sales Management\n• Strong written and verbal skills required\n• Licensed to originate loans\n• Must be able to work in a normal office environment\n• Ability to lift up to 20 pounds occasionally",
+        summary: "Under the direction of Senior Management, the Branch Manager is responsible for planning, directing and controlling the operation of the loan production to establish marketing functions of the branch.",
+        description: "Develop and implement strategies to generate loans from Real Estate Companies, Builders, Relocation Companies and The Public. Recruit, hire & train and supervise Loan Officers and individuals involved in the loan production functions. Develop compensation and incentive programs for production staff. Develop and conduct mortgage finance training programs. Work in conjunction with the Director of Marketing to establish marketing materials to be used by loan officers. Participate with Senior Management in the development of financial products to be marketed. Submit management and financial reports as required. Perform other tasks as assigned by supervisor.",
+        requirements: "• Minimum of 4 years College\n• At least 10 years of experience in Sales or Sales Management\n• Strong written and verbal skills required\n• Licensed to originate loans\n• Must be able to work in a normal office environment\n• May occasionally need to lift up to 20 pounds",
         niceToHave: "• Previous mortgage industry management experience\n• Experience with loan officer training and development\n• Knowledge of mortgage finance products\n• Experience with marketing material development",
         postedDate: "May 20, 2025"
       },
