@@ -156,9 +156,13 @@ export default function JobDetailPage() {
               <div className="lg:col-span-2">
                 <div className="prose prose-sm max-w-none">
                   <h2 className="text-xl font-semibold text-secondary-700 mb-4">About the Role</h2>
-                  <p className="text-secondary-500 mb-8 whitespace-pre-wrap text-base leading-relaxed">
-                    {job.description || 'No description available'}
-                  </p>
+                  <div className="text-secondary-500 mb-8 text-base leading-relaxed">
+                    {job.description ? (
+                      <p className="whitespace-pre-wrap">{job.description}</p>
+                    ) : (
+                      <p>No description available</p>
+                    )}
+                  </div>
 
                   <h2 className="text-xl font-semibold text-secondary-700 mb-4">Requirements</h2>
                   <div className="text-secondary-500 mb-8">
