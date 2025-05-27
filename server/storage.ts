@@ -134,8 +134,7 @@ export class MemStorage implements IStorage {
     ];
 
     for (const job of sampleJobs) {
-      const { postedDate, ...jobData } = job;
-      await this.createJob(jobData as InsertJob);
+      await this.createJob(job as InsertJob);
     }
   }
 
