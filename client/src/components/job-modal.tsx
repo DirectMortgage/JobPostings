@@ -97,7 +97,7 @@ export default function JobModal({ job, isOpen, onClose }: JobModalProps) {
               <div className="prose prose-sm max-w-none">
                 <h3 className="text-lg font-semibold text-secondary-700 mb-3">About the Role</h3>
                 <p className="text-secondary-500 mb-6 whitespace-pre-wrap">
-                  {job.description}
+                  {job.description || 'No description available'}
                 </p>
 
                 <h3 className="text-lg font-semibold text-secondary-700 mb-3">Requirements</h3>
