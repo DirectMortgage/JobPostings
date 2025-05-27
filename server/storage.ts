@@ -171,8 +171,6 @@ export class MemStorage implements IStorage {
     const newJob: Job = {
       id,
       ...job,
-      createdAt: new Date(),
-      updatedAt: new Date(),
     };
     this.jobs.set(id, newJob);
     return newJob;
@@ -185,7 +183,6 @@ export class MemStorage implements IStorage {
     const updatedJob: Job = {
       ...existingJob,
       ...jobUpdate,
-      updatedAt: new Date(),
     };
     this.jobs.set(id, updatedJob);
     return updatedJob;
