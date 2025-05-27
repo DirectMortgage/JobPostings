@@ -157,11 +157,11 @@ export default function JobDetailPage() {
                 <div className="prose prose-sm max-w-none">
                   <h2 className="text-xl font-semibold text-secondary-700 mb-4">About the Role</h2>
                   <div className="text-secondary-500 mb-8 text-base leading-relaxed">
-                    {job.description ? (
-                      <p className="whitespace-pre-wrap">{job.description}</p>
-                    ) : (
-                      <p>No description available</p>
-                    )}
+                    <p className="whitespace-pre-wrap">
+                      {job.description || (job.title === "Branch Manager" ? 
+                        "Develop and implement strategies to generate loans from Real Estate Companies, Builders, Relocation Companies and The Public. Recruit, hire & train and supervise Loan Officers and individuals involved in the loan production functions. Develop compensation and incentive programs for production staff. Develop and conduct mortgage finance training programs. Work in conjunction with the Director of Marketing to establish marketing materials to be used by loan officers. Participate with Senior Management in the development of financial products to be marketed. Submit management and financial reports as required. Perform other tasks as assigned by supervisor." 
+                        : "No description available")}
+                    </p>
                   </div>
 
                   <h2 className="text-xl font-semibold text-secondary-700 mb-4">Requirements</h2>
