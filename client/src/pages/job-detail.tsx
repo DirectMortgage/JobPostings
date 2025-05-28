@@ -257,11 +257,20 @@ export default function JobDetailPage() {
                           )}
                           {job.title === "National Recruiter" && (
                             <>
-                              <li className="text-base">Bachelor's degree in Human Resources, Business, or related field</li>
-                              <li className="text-base">3+ years of recruiting experience, preferably in financial services</li>
-                              <li className="text-base">Experience with applicant tracking systems</li>
-                              <li className="text-base">Strong sourcing and interviewing skills</li>
-                              <li className="text-base">Ability to travel up to 25%</li>
+                              <li className="text-base">At least (5) years mortgage banking, with a built book of Business/Candidates</li>
+                              <li className="text-base">Effectively expressing ideas and information to individuals and groups</li>
+                              <li className="text-base">Adjusting presentation, language, terminology, and style to meet the needs of the audience</li>
+                              <li className="text-base">Utilizing the best communication methods for the given situation and message</li>
+                              <li className="text-base">Effective communication; whether verbal, email or memorandum</li>
+                              <li className="text-base">Must be proficient in Word, Excel, and Outlook applications</li>
+                              <li className="text-base">Must have a positive attitude</li>
+                              <li className="text-base">Must be dependable, self-motivated and require minimal supervision</li>
+                              <li className="text-base">Ensure appropriate documentation for all processes and procedures</li>
+                              <li className="text-base">Well groomed and business professional at all times</li>
+                              <li className="text-base">Willing to travel as needed</li>
+                              <li className="text-base">A working knowledge of industry related trade associations (i.e. Realtor, Homebuilder, Mortgage Banking groups)</li>
+                              <li className="text-base">Successful background in business planning as well as budgeting and working knowledge of industry specific software's</li>
+                              <li className="text-base">Be well spoken, outgoing, and posses ability to converse with all types of people</li>
                             </>
                           )}
                           {job.title === "Regional Sales Manager" && (
