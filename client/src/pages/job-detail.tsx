@@ -319,6 +319,16 @@ export default function JobDetailPage() {
                         )}
                       </div>
 
+                      {job.title === "National Recruiter" && (
+                        <>
+                          <h2 className="text-xl font-semibold text-secondary-700 mb-4">Work Environment</h2>
+                          <div className="text-secondary-500 mb-8">
+                            <p className="text-base mb-4">Standard office environment. This role may require travel therefore a reliable vehicle is needed.</p>
+                            <p className="text-base">This job description reflects management's definition of the essential functions for this job but does not restrict the tasks that may be assigned. Management may assign or reassign duties and responsibilities to this job at any time due to reasonable accommodation or other reasons. In addition, the above statements are intended to describe the general nature and level of work being performed by the person assigned to this job.</p>
+                          </div>
+                        </>
+                      )}
+
 
                     </>
                   )}
