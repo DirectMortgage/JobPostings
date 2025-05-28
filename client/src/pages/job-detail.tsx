@@ -233,6 +233,7 @@ export default function JobDetailPage() {
                             <li className="text-base">Maintain communication with Realtor partners regarding progress.</li>
                             <li className="text-base">Stay current on investor guidelines and program updates.</li>
                           </ul>
+                          <p className="text-sm italic text-secondary-600 mt-3 ml-6"><span className="font-bold">Key Metric:</span> 100% of borrower contacts completed within 24 hours; consistent accuracy and completeness in qualification assessments.</p>
                         </li>
                         <li className="text-base">Manage Pre-Approvals</li>
                         <li className="text-base">Oversee Pipeline Management</li>
