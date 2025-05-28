@@ -172,7 +172,7 @@ export default function JobDetailPage() {
                     )}
                   </div>
 
-                  <h2 className="text-xl font-semibold text-secondary-700 mb-4">Responsibilities</h2>
+                  <h2 className="text-xl font-semibold text-secondary-700 mb-4">{job.title === "Licensed Loan Partner (Qualification Specialist)" ? "Top 3 Core Duties & Key Measurements" : "Responsibilities"}</h2>
                   <div className="text-secondary-500 mb-8">
                     {job.title === "Branch Manager" ? (
                       <ul className="list-disc list-inside space-y-2">
