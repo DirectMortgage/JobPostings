@@ -199,10 +199,18 @@ export default function JobDetailPage() {
                     ) : job.title === "Regional Sales Manager" ? (
                       <div>
                         <h3 className="text-lg font-semibold text-secondary-700 mb-3">Sales Leadership & Team Development</h3>
-                        <ul className="list-disc list-inside space-y-2">
+                        <ul className="list-disc list-inside space-y-2 mb-6">
                           <li className="text-base">Lead all sales training efforts within the branch, including onboarding, ongoing education, and performance coaching.</li>
                           <li className="text-base">Serve as a daily resource of knowledge, encouragement, and accountability for all licensed sales staff.</li>
                           <li className="text-base">Mentor and develop Licensed Loan Partners / Qualification Specialists to ensure they are properly trained and consistently delivering accurate, high-quality advice to clients.</li>
+                        </ul>
+                        
+                        <h3 className="text-lg font-semibold text-secondary-700 mb-3">Lead Management & Client Experience</h3>
+                        <ul className="list-disc list-inside space-y-2">
+                          <li className="text-base">Ensure all incoming leads are promptly assigned to a qualified team member and followed up with in a timely manner.</li>
+                          <li className="text-base">Monitor lead activity and conversion to ensure high performance across the team.</li>
+                          <li className="text-base">Serve as a backup to Loan Partners in their absence, following up with leads and continuing the client experience without disruption.</li>
+                          <li className="text-base">Hold initial loan consultations with new clients, modeling exceptional service, professionalism, and in-depth product knowledge.</li>
                         </ul>
                       </div>
                     ) : (
