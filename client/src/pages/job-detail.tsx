@@ -55,7 +55,7 @@ export default function JobDetailPage() {
   const jobId = params.id;
 
   const { data: job, isLoading, error } = useQuery<Job>({
-    queryKey: ["/api/jobs", jobId],
+    queryKey: [`/api/jobs/${jobId}`],
     enabled: !!jobId,
   });
 
