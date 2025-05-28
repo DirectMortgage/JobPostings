@@ -377,7 +377,7 @@ export default function JobDetailPage() {
                         </ul>
                       </div>
 
-                      <h2 className="text-xl font-semibold text-secondary-700 mb-4">{job.title === "Regional Sales Manager" ? "What We Offer" : "Physical Demands"}</h2>
+                      <h2 className="text-xl font-semibold text-secondary-700 mb-4">{job.title === "Regional Sales Manager" ? "What We Offer" : job.title === "Licensed Loan Partner (Qualification Specialist)" ? "Qualifications" : "Physical Demands"}</h2>
                       <div className="text-secondary-500 mb-8">
                         {job.title === "Regional Sales Manager" ? (
                           <ul className="list-disc list-inside space-y-2">
@@ -388,6 +388,19 @@ export default function JobDetailPage() {
                           </ul>
                         ) : job.title === "National Recruiter" ? (
                           <p className="text-base">While performing the duties of this job, a person is regularly sitting in a normal office environment at a desk using a computer, phone, fax and copy machine. This person may occasionally need to lift up to 20 pounds.</p>
+                        ) : job.title === "Licensed Loan Partner (Qualification Specialist)" ? (
+                          <ul className="list-disc list-inside space-y-2">
+                            <li className="text-base">Active and current NMLS license required</li>
+                            <li className="text-base">Minimum 5 years of mortgage experience (processing, underwriting, or origination)</li>
+                            <li className="text-base">Proficient with DU/DO, LP, and major investor guidelines</li>
+                            <li className="text-base">Experience with loan origination systems (e.g., Encompass, Calyx Point)</li>
+                            <li className="text-base">Skilled in Microsoft Office Suite (Word, Excel, PowerPoint, Outlook, OneNote)</li>
+                            <li className="text-base">Strong written and verbal communication skills</li>
+                            <li className="text-base">Exceptional time management, organizational skills, and attention to detail</li>
+                            <li className="text-base">Ability to perform under pressure and meet deadlines</li>
+                            <li className="text-base">Collaborative mindset with a focus on service and results</li>
+                            <li className="text-base">Must complete required regulatory and compliance training</li>
+                          </ul>
                         ) : (
                           <ul className="list-disc list-inside space-y-2">
                             <li className="text-base">Must be able to work in a normal office environment</li>
