@@ -157,11 +157,19 @@ export default function JobDetailPage() {
                 <div className="prose prose-sm max-w-none">
                   <h2 className="text-xl font-semibold text-secondary-700 mb-4">About the Role</h2>
                   <div className="text-secondary-500 mb-8 text-base leading-relaxed">
-                    <p className="whitespace-pre-wrap">
-                      {job.title === "Branch Manager" ? 
-                        "Develop and implement strategies to generate loans from Real Estate Companies, Builders, Relocation Companies and The Public. Recruit, hire & train and supervise Loan Officers and individuals involved in the loan production functions. Develop compensation and incentive programs for production staff. Develop and conduct mortgage finance training programs. Work in conjunction with the Director of Marketing to establish marketing materials to be used by loan officers. Participate with Senior Management in the development of financial products to be marketed. Submit management and financial reports as required. Perform other tasks as assigned by supervisor." 
-                        : (job.description || "No description available")}
-                    </p>
+                    {job.title === "Branch Manager" ? (
+                      <div>
+                        <p className="mb-4">Develop and implement strategies to generate loans from Real Estate Companies, Builders, Relocation Companies and The Public.</p>
+                        <p className="mb-4">Recruit, hire & train and supervise Loan Officers and individuals involved in the loan production functions.</p>
+                        <p className="mb-4">Develop compensation and incentive programs for production staff.</p>
+                        <p className="mb-4">Develop and conduct mortgage finance training programs.</p>
+                        <p className="mb-4">Work in conjunction with the Director of Marketing to establish marketing materials to be used by loan officers.</p>
+                        <p className="mb-4">Participate with Senior Management in the development of financial products to be marketed.</p>
+                        <p className="mb-4">Submit management and financial reports as required. Perform other tasks as assigned by supervisor.</p>
+                      </div>
+                    ) : (
+                      <p className="whitespace-pre-wrap">{job.description || "No description available"}</p>
+                    )}
                   </div>
 
                   <h2 className="text-xl font-semibold text-secondary-700 mb-4">Requirements</h2>
