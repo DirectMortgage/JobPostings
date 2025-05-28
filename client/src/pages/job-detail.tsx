@@ -159,13 +159,7 @@ export default function JobDetailPage() {
                   <div className="text-secondary-500 mb-8 text-base leading-relaxed">
                     {job.title === "Branch Manager" ? (
                       <div>
-                        <p className="mb-4">Develop and implement strategies to generate loans from Real Estate Companies, Builders, Relocation Companies and The Public.</p>
-                        <p className="mb-4">Recruit, hire & train and supervise Loan Officers and individuals involved in the loan production functions.</p>
-                        <p className="mb-4">Develop compensation and incentive programs for production staff.</p>
-                        <p className="mb-4">Develop and conduct mortgage finance training programs.</p>
-                        <p className="mb-4">Work in conjunction with the Director of Marketing to establish marketing materials to be used by loan officers.</p>
-                        <p className="mb-4">Participate with Senior Management in the development of financial products to be marketed.</p>
-                        <p className="mb-4">Submit management and financial reports as required. Perform other tasks as assigned by supervisor.</p>
+                        <p className="mb-4">Under the direction of Senior Management, the Branch Manager is responsible for planning, directing and controlling the operation of the loan production to establish marketing functions of the branch.</p>
                       </div>
                     ) : (
                       <p className="whitespace-pre-wrap">{job.description || "No description available"}</p>
@@ -174,11 +168,27 @@ export default function JobDetailPage() {
 
                   <h2 className="text-xl font-semibold text-secondary-700 mb-4">Requirements</h2>
                   <div className="text-secondary-500 mb-8">
-                    {job.requirements ? job.requirements.split('\n').map((req, index) => (
-                      <div key={index} className="mb-2 text-base">
-                        {req.startsWith('•') ? req : `• ${req}`}
+                    {job.title === "Branch Manager" ? (
+                      <div>
+                        <div className="mb-2 text-base">● Develop and implement strategies to generate loans from the following sources:</div>
+                        <div className="mb-2 text-base ml-4">● Real Estate Companies</div>
+                        <div className="mb-2 text-base ml-4">● Builders</div>
+                        <div className="mb-2 text-base ml-4">● Relocation Companies and</div>
+                        <div className="mb-2 text-base ml-4">● The Public</div>
+                        <div className="mb-2 text-base">● Recruit, hire & train and supervise Loan Officers and individuals involved in the loan production functions. Develop compensation and incentive programs for production staff.</div>
+                        <div className="mb-2 text-base">● Develop and conduct mortgage finance training programs.</div>
+                        <div className="mb-2 text-base">● Work in conjunction with the Director of Marketing to establish marketing materials to be used by loan officers</div>
+                        <div className="mb-2 text-base">● Participate with Senior Management in the development of financial products to be marketed.</div>
+                        <div className="mb-2 text-base">● Submit management and financial reports as required.</div>
+                        <div className="mb-2 text-base">● Perform other tasks as assigned by supervisor</div>
                       </div>
-                    )) : null}
+                    ) : (
+                      job.requirements ? job.requirements.split('\n').map((req, index) => (
+                        <div key={index} className="mb-2 text-base">
+                          {req.startsWith('•') ? req : `• ${req}`}
+                        </div>
+                      )) : null
+                    )}
                   </div>
 
                   {job.niceToHave && (
