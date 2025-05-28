@@ -247,7 +247,18 @@ export default function JobDetailPage() {
                           </ul>
                           <p className="text-sm italic text-secondary-600 mt-3 ml-6"><span className="font-bold">Key Metric:</span> 100% accuracy in pre-approvals; proactive outreach tracked weekly; timely notifications to referral partners.</p>
                         </li>
-                        <li className="text-base">Oversee Pipeline Management</li>
+                        <li className="text-base">
+                          Oversee Pipeline Management
+                          <ul className="list-disc list-inside ml-6 mt-2 space-y-1">
+                            <li className="text-base">Expedite onboarding of new contracts with timely Rate Lock Consultations.</li>
+                            <li className="text-base">Submit files for eDisclosures and maintain processing momentum.</li>
+                            <li className="text-base">Lead Tuesday update calls with borrowers (and Realtors as needed).</li>
+                            <li className="text-base">Perform daily pipeline reviews to identify and resolve choke points.</li>
+                            <li className="text-base">Attend weekly pipeline meetings and ensure proactive status tracking.</li>
+                            <li className="text-base">Coordinate all communications around key deadlines and closing.</li>
+                            <li className="text-base">Review Closing Disclosures, complete pre-closing and funding calls, and deliver post-close support.</li>
+                          </ul>
+                        </li>
                       </ol>
                     ) : (
                       job.requirements ? (
