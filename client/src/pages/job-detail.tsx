@@ -258,6 +258,7 @@ export default function JobDetailPage() {
                             <li className="text-base">Coordinate all communications around key deadlines and closing.</li>
                             <li className="text-base">Review Closing Disclosures, complete pre-closing and funding calls, and deliver post-close support.</li>
                           </ul>
+                          <p className="text-sm italic text-secondary-600 mt-3 ml-6"><span className="font-bold">Key Metric:</span> 95%+ of loans closed on or before contract date; 95%+ of issues resolved without escalation.</p>
                         </li>
                       </ol>
                     ) : (
