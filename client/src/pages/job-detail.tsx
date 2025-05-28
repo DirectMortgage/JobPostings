@@ -191,7 +191,7 @@ export default function JobDetailPage() {
                     ) : job.title === "National Recruiter" ? (
                       <ul className="list-disc list-inside space-y-2">
                         <li className="text-base">Solicit and Interview Retail Branches who meet the Mid America Mortgage standards for hire <br /><span className="text-sm italic text-secondary-400">Measurement: Minimum annualized Branch production $36M or 160 units.</span></li>
-                        <li className="text-base">Solicit and Interview Individual Loan Officer Candidates who meet the Mid America Mortgage standards for hire</li>
+                        <li className="text-base">Solicit and Interview Individual Loan Officer Candidates who meet the Mid America Mortgage standards for hire <br /><span className="text-sm italic text-secondary-400">Measurement: Minimum annualized loan officer production, $8M or 36 units.</span></li>
                         <li className="text-base">Adhere to documented policies and procedures</li>
                       </ul>
                     ) : (
