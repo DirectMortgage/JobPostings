@@ -304,20 +304,7 @@ export default function JobDetailPage() {
                         </ul>
                       </div>
 
-                      {job.niceToHave && (
-                        <>
-                          <h2 className="text-xl font-semibold text-secondary-700 mb-4">Nice to Have</h2>
-                          <div className="text-secondary-500 mb-8">
-                            <ul className="list-disc list-inside space-y-2">
-                              {job.niceToHave.split('\n').map((item, index) => (
-                                <li key={index} className="text-base">
-                                  {item.replace(/^[•\-*]\s*/, '')}
-                                </li>
-                              ))}
-                            </ul>
-                          </div>
-                        </>
-                      )}
+
                     </>
                   )}
                 </div>
