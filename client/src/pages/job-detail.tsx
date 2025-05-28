@@ -206,11 +206,18 @@ export default function JobDetailPage() {
                         </ul>
                         
                         <h3 className="text-lg font-semibold text-secondary-700 mb-3">Lead Management & Client Experience</h3>
-                        <ul className="list-disc list-inside space-y-2">
+                        <ul className="list-disc list-inside space-y-2 mb-6">
                           <li className="text-base">Ensure all incoming leads are promptly assigned to a qualified team member and followed up with in a timely manner.</li>
                           <li className="text-base">Monitor lead activity and conversion to ensure high performance across the team.</li>
                           <li className="text-base">Serve as a backup to Loan Partners in their absence, following up with leads and continuing the client experience without disruption.</li>
                           <li className="text-base">Hold initial loan consultations with new clients, modeling exceptional service, professionalism, and in-depth product knowledge.</li>
+                        </ul>
+                        
+                        <h3 className="text-lg font-semibold text-secondary-700 mb-3">Loan Origination</h3>
+                        <ul className="list-disc list-inside space-y-2">
+                          <li className="text-base">Maintain active mortgage licensing and originate residential mortgage loans under your own name, contributing directly to branch production.</li>
+                          <li className="text-base">Work closely with operations staff to ensure smooth loan processing and an exceptional client experience.</li>
+                          <li className="text-base">Stay informed on current market conditions, products, guidelines, and company offerings.</li>
                         </ul>
                       </div>
                     ) : (
