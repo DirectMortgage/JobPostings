@@ -222,6 +222,12 @@ export default function JobDetailPage() {
                           <li className="text-base">Stay informed on current market conditions, products, guidelines, and company offerings.</li>
                         </ul>
                       </div>
+                    ) : job.title === "Licensed Loan Partner (Qualification Specialist)" ? (
+                      <ol className="list-decimal list-inside space-y-2">
+                        <li className="text-base">Prequalify Borrowers</li>
+                        <li className="text-base">Manage Pre-Approvals</li>
+                        <li className="text-base">Oversee Pipeline Management</li>
+                      </ol>
                     ) : (
                       job.requirements ? (
                         <ul className="list-disc list-inside space-y-2">
