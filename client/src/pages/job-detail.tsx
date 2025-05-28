@@ -257,7 +257,7 @@ export default function JobDetailPage() {
 
                   {job.title !== "Branch Manager" && (
                     <>
-                      <h2 className="text-xl font-semibold text-secondary-700 mb-4">Job Requirements</h2>
+                      <h2 className="text-xl font-semibold text-secondary-700 mb-4">{job.title === "Regional Sales Manager" ? "Qualifications" : "Job Requirements"}</h2>
                       <div className="text-secondary-500 mb-8">
                         <ul className="list-disc list-inside space-y-2">
                           {job.title === "Processor" && (
@@ -307,11 +307,13 @@ export default function JobDetailPage() {
                           )}
                           {job.title === "Regional Sales Manager" && (
                             <>
-                              <li className="text-base">Bachelor's degree in Business, Sales, or related field</li>
-                              <li className="text-base">5+ years of sales management experience in mortgage industry</li>
-                              <li className="text-base">Proven track record of achieving sales targets</li>
-                              <li className="text-base">Strong leadership and team development skills</li>
-                              <li className="text-base">NMLS license preferred</li>
+                              <li className="text-base">Active NMLS license with the ability to originate loans</li>
+                              <li className="text-base">Proven experience in mortgage sales, including client-facing origination</li>
+                              <li className="text-base">Prior leadership or training experience preferred</li>
+                              <li className="text-base">Strong understanding of residential mortgage products and regulations</li>
+                              <li className="text-base">Exceptional communication, coaching, and interpersonal skills</li>
+                              <li className="text-base">Highly organized with strong time management abilities and attention to detail</li>
+                              <li className="text-base">Passionate about delivering a high-touch, high-value client experience</li>
                             </>
                           )}
                           {job.title === "Licensed Loan Partner (Qualification Specialist)" && (
