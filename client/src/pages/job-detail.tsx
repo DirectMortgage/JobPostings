@@ -145,7 +145,7 @@ export default function JobDetailPage() {
                 <div>
                   <h1 className="text-3xl font-bold text-secondary-700">{job.title}</h1>
                   <p className="text-lg text-secondary-500">
-                    {job.department ? formatDepartment(job.department) : ''} • {job.type ? formatType(job.type) : ''} • {job.location ? formatLocation(job.location) : ''}
+                    {job.department ? formatDepartment(job.department) : ''} • {job.type ? formatType(job.type) : ''}
                   </p>
                 </div>
               </div>
@@ -441,15 +441,7 @@ export default function JobDetailPage() {
                       </div>
                     </div>
                     
-                    <div className="flex items-center">
-                      <div className="w-10 h-10 bg-primary-100 rounded-lg flex items-center justify-center mr-3">
-                        <MapPin className="text-primary-500" size={16} />
-                      </div>
-                      <div>
-                        <span className="text-sm font-medium text-secondary-500">Location</span>
-                        <p className="text-secondary-700">{formatLocation(job.location)}</p>
-                      </div>
-                    </div>
+
                     
                     <div className="flex items-center">
                       <div className="w-10 h-10 bg-primary-100 rounded-lg flex items-center justify-center mr-3">
