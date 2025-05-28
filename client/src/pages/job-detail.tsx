@@ -196,6 +196,12 @@ export default function JobDetailPage() {
                         <li className="text-base">Solicit and Interview Individual Loan Officer Candidates who meet the Mid America Mortgage standards for hire <br /><span className="text-sm italic text-secondary-400">Measurement: Minimum annualized loan officer production, $8M or 36 units.</span><br /><span className="text-sm italic text-secondary-400">Recruiting expectations are $200M in annualized production (total).</span></li>
                         <li className="text-base">Adhere to documented policies and procedures</li>
                       </ul>
+                    ) : job.title === "Regional Sales Manager" ? (
+                      <ul className="list-disc list-inside space-y-2">
+                        <li className="text-base">Lead all sales training efforts within the branch, including onboarding, ongoing education, and performance coaching.</li>
+                        <li className="text-base">Serve as a daily resource of knowledge, encouragement, and accountability for all licensed sales staff.</li>
+                        <li className="text-base">Mentor and develop Licensed Loan Partners / Qualification Specialists to ensure they are properly trained and consistently delivering accurate, high-quality advice to clients.</li>
+                      </ul>
                     ) : (
                       job.requirements ? (
                         <ul className="list-disc list-inside space-y-2">
