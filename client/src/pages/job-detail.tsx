@@ -223,8 +223,17 @@ export default function JobDetailPage() {
                         </ul>
                       </div>
                     ) : job.title === "Licensed Loan Partner (Qualification Specialist)" ? (
-                      <ol className="list-decimal list-inside space-y-2">
-                        <li className="text-base">Prequalify Borrowers</li>
+                      <ol className="list-decimal list-inside space-y-4">
+                        <li className="text-base">
+                          Prequalify Borrowers
+                          <ul className="list-disc list-inside ml-6 mt-2 space-y-1">
+                            <li className="text-base">Contact all new borrower applicants within 24 hours of assignment.</li>
+                            <li className="text-base">Review the complete 1003 application and collect supporting documentation.</li>
+                            <li className="text-base">Assess and validate borrower eligibility (cash, credit, income/capacity).</li>
+                            <li className="text-base">Maintain communication with Realtor partners regarding progress.</li>
+                            <li className="text-base">Stay current on investor guidelines and program updates.</li>
+                          </ul>
+                        </li>
                         <li className="text-base">Manage Pre-Approvals</li>
                         <li className="text-base">Oversee Pipeline Management</li>
                       </ol>
