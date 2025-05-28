@@ -245,6 +245,7 @@ export default function JobDetailPage() {
                             <li className="text-base">Dedicate a weekly "Pre-Approval Power Hour" to outreach.</li>
                             <li className="text-base">Notify referring agents immediately upon pre-approval issuance.</li>
                           </ul>
+                          <p className="text-sm italic text-secondary-600 mt-3 ml-6"><span className="font-bold">Key Metric:</span> 100% accuracy in pre-approvals; proactive outreach tracked weekly; timely notifications to referral partners.</p>
                         </li>
                         <li className="text-base">Oversee Pipeline Management</li>
                       </ol>
