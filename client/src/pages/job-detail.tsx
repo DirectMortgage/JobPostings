@@ -163,6 +163,8 @@ export default function JobDetailPage() {
                       </div>
                     ) : job.title === "National Recruiter" ? (
                       <p>The National Recruiter will be Responsible for working with the Head of National Retail Lending to strategically manage corporate growth by adding Loan Officers and Branches Nationally. They will work with the Head of Training and corporate management team to maximize workflow efficiencies between the corporate operations and branch employees. Recruiter will assist with the facilitation of branch growth by working in conjunction with Branch Managers to understand their candidate requirements.</p>
+                    ) : job.title === "Regional Sales Manager" ? (
+                      <p>We are seeking an experienced, licensed Sales Manager to lead and support the sales efforts of our high-performing mortgage branch. This individual will play a dual role as both a producing loan officer and a team leader, responsible for sales training, lead management, and ensuring every client receives best-in-class service from first contact to close.</p>
                     ) : (
                       <p className="whitespace-pre-wrap">{job.description || "No description available"}</p>
                     )}
