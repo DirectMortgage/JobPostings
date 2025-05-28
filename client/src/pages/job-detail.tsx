@@ -461,16 +461,7 @@ export default function JobDetailPage() {
                       </div>
                     </div>
                     
-                    <div className="flex items-center">
-                      <div className="w-10 h-10 bg-primary-100 rounded-lg flex items-center justify-center mr-3">
-                        <DollarSign className="text-primary-500" size={16} />
-                      </div>
-                      <div>
-                        <span className="text-sm font-medium text-secondary-500">Salary Range</span>
-                        <p className="text-secondary-700">{job.salary}</p>
-                      </div>
-                    </div>
-                    
+
                     <div className="border-t border-gray-200 pt-4">
                       <span className="text-sm font-medium text-secondary-500">Posted</span>
                       <p className="text-secondary-700">{job.postedDate}</p>
