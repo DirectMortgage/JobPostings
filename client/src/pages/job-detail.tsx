@@ -169,21 +169,23 @@ export default function JobDetailPage() {
                   <h2 className="text-xl font-semibold text-secondary-700 mb-4">Responsibilities</h2>
                   <div className="text-secondary-500 mb-8">
                     {job.title === "Branch Manager" ? (
-                      <div>
-                        <div className="mb-2 text-base">Develop and implement strategies to generate loans from the following sources:</div>
-                        <ul>
-                        <li className="mb-2 text-base ml-4">Real Estate Companies</li>
-                        <li className="mb-2 text-base ml-4">Builders</li>
-                        <li className="mb-2 text-base ml-4">Relocation Companies and</li>
-                        <li className="mb-2 text-base ml-4">The Public</li>
+                      <ul className="list-disc list-inside space-y-2">
+                        <li className="text-base">
+                          Develop and implement strategies to generate loans from the following sources:
+                          <ul className="list-disc list-inside ml-6 mt-2 space-y-1">
+                            <li className="text-base">Real Estate Companies</li>
+                            <li className="text-base">Builders</li>
+                            <li className="text-base">Relocation Companies</li>
+                            <li className="text-base">The Public</li>
                           </ul>
-                        <div className="mb-2 text-base">Recruit, hire & train and supervise Loan Officers and individuals involved in the loan production functions. Develop compensation and incentive programs for production staff.</div>
-                        <div className="mb-2 text-base">Develop and conduct mortgage finance training programs.</div>
-                        <div className="mb-2 text-base">Work in conjunction with the Director of Marketing to establish marketing materials to be used by loan officers</div>
-                        <div className="mb-2 text-base">Participate with Senior Management in the development of financial products to be marketed.</div>
-                        <div className="mb-2 text-base">Submit management and financial reports as required.</div>
-                        <div className="mb-2 text-base">Perform other tasks as assigned by supervisor</div>
-                      </div>
+                        </li>
+                        <li className="text-base">Recruit, hire & train and supervise Loan Officers and individuals involved in the loan production functions. Develop compensation and incentive programs for production staff.</li>
+                        <li className="text-base">Develop and conduct mortgage finance training programs.</li>
+                        <li className="text-base">Work in conjunction with the Director of Marketing to establish marketing materials to be used by loan officers</li>
+                        <li className="text-base">Participate with Senior Management in the development of financial products to be marketed.</li>
+                        <li className="text-base">Submit management and financial reports as required.</li>
+                        <li className="text-base">Perform other tasks as assigned by supervisor</li>
+                      </ul>
                     ) : (
                       job.requirements ? job.requirements.split('\n').map((req, index) => (
                         <div key={index} className="mb-2 text-base">
