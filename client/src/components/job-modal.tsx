@@ -54,6 +54,11 @@ const formatDepartment = (department: string) => {
 
 export default function JobModal({ job, isOpen, onClose }: JobModalProps) {
   if (!job) return null;
+  
+  // Debug logging
+  if (job.title === "Branch Manager") {
+    console.log("Branch Manager job data:", JSON.stringify(job, null, 2));
+  }
 
   const handleApply = () => {
     alert("Application functionality would be implemented here!");
