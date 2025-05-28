@@ -103,9 +103,9 @@ export default function JobModal({ job, isOpen, onClose }: JobModalProps) {
                 <h3 className="text-lg font-semibold text-secondary-700 mb-3">About the Role</h3>
                 <div className="text-secondary-500 mb-6 text-base leading-relaxed">
                   <p className="whitespace-pre-wrap">
-                    {job.description || (job.title === "Branch Manager" ? 
+                    {job.title === "Branch Manager" ? 
                       "Develop and implement strategies to generate loans from Real Estate Companies, Builders, Relocation Companies and The Public. Recruit, hire & train and supervise Loan Officers and individuals involved in the loan production functions. Develop compensation and incentive programs for production staff. Develop and conduct mortgage finance training programs. Work in conjunction with the Director of Marketing to establish marketing materials to be used by loan officers. Participate with Senior Management in the development of financial products to be marketed. Submit management and financial reports as required. Perform other tasks as assigned by supervisor." 
-                      : "No description available")}
+                      : (job.description || "No description available")}
                   </p>
                 </div>
 
