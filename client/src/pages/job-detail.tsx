@@ -235,7 +235,17 @@ export default function JobDetailPage() {
                           </ul>
                           <p className="text-sm italic text-secondary-600 mt-3 ml-6"><span className="font-bold">Key Metric:</span> 100% of borrower contacts completed within 24 hours; consistent accuracy and completeness in qualification assessments.</p>
                         </li>
-                        <li className="text-base">Manage Pre-Approvals</li>
+                        <li className="text-base">
+                          Manage Pre-Approvals
+                          <ul className="list-disc list-inside ml-6 mt-2 space-y-1">
+                            <li className="text-base">Accurately issue pre-approvals and pre-approval addenda.</li>
+                            <li className="text-base">Handle loan scenario and payment structure inquiries.</li>
+                            <li className="text-base">Flag red flags and communicate any potential issues to the Loan Officer or Team Captain.</li>
+                            <li className="text-base">Proactively follow up with pre-approved buyers.</li>
+                            <li className="text-base">Dedicate a weekly "Pre-Approval Power Hour" to outreach.</li>
+                            <li className="text-base">Notify referring agents immediately upon pre-approval issuance.</li>
+                          </ul>
+                        </li>
                         <li className="text-base">Oversee Pipeline Management</li>
                       </ol>
                     ) : (
