@@ -305,14 +305,18 @@ export default function JobDetailPage() {
 
                       <h2 className="text-xl font-semibold text-secondary-700 mb-4">Physical Demands</h2>
                       <div className="text-secondary-500 mb-8">
-                        <ul className="list-disc list-inside space-y-2">
-                          <li className="text-base">Must be able to work in a normal office environment</li>
-                          <li className="text-base">Extended periods of computer work and data entry</li>
-                          <li className="text-base">May occasionally need to lift up to 20 pounds</li>
-                          {(job.title === "National Recruiter" || job.title === "Regional Sales Manager") && (
-                            <li className="text-base">Ability to travel as required for client meetings and events</li>
-                          )}
-                        </ul>
+                        {job.title === "National Recruiter" ? (
+                          <p className="text-base">While performing the duties of this job, a person is regularly sitting in a normal office environment at a desk using a computer, phone, fax and copy machine. This person may occasionally need to lift up to 20 pounds.</p>
+                        ) : (
+                          <ul className="list-disc list-inside space-y-2">
+                            <li className="text-base">Must be able to work in a normal office environment</li>
+                            <li className="text-base">Extended periods of computer work and data entry</li>
+                            <li className="text-base">May occasionally need to lift up to 20 pounds</li>
+                            {job.title === "Regional Sales Manager" && (
+                              <li className="text-base">Ability to travel as required for client meetings and events</li>
+                            )}
+                          </ul>
+                        )}
                       </div>
 
 
