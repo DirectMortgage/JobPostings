@@ -187,11 +187,15 @@ export default function JobDetailPage() {
                         <li className="text-base">Perform other tasks as assigned by supervisor</li>
                       </ul>
                     ) : (
-                      job.requirements ? job.requirements.split('\n').map((req, index) => (
-                        <div key={index} className="mb-2 text-base">
-                          {req.startsWith('•') ? req : `• ${req}`}
-                        </div>
-                      )) : null
+                      job.requirements ? (
+                        <ul className="list-disc list-inside space-y-2">
+                          {job.requirements.split('\n').map((req, index) => (
+                            <li key={index} className="text-base">
+                              {req.replace(/^[•\-*]\s*/, '')}
+                            </li>
+                          ))}
+                        </ul>
+                      ) : null
                     )}
                   </div>
 
@@ -217,16 +221,103 @@ export default function JobDetailPage() {
                     </>
                   )}
 
-                  {job.title !== "Branch Manager" && job.niceToHave && (
+                  {job.title !== "Branch Manager" && (
                     <>
-                      <h2 className="text-xl font-semibold text-secondary-700 mb-4">Nice to Have</h2>
-                      <div className="text-secondary-500">
-                        {job.niceToHave.split('\n').map((item, index) => (
-                          <div key={index} className="mb-2 text-base">
-                            {item.startsWith('•') ? item : `• ${item}`}
-                          </div>
-                        ))}
+                      <h2 className="text-xl font-semibold text-secondary-700 mb-4">Job Requirements</h2>
+                      <div className="text-secondary-500 mb-8">
+                        <ul className="list-disc list-inside space-y-2">
+                          {job.title === "Processor" && (
+                            <>
+                              <li className="text-base">High School diploma or equivalent required</li>
+                              <li className="text-base">1-2 years of mortgage processing experience preferred</li>
+                              <li className="text-base">Strong attention to detail and organizational skills</li>
+                              <li className="text-base">Proficiency in mortgage software and Microsoft Office</li>
+                              <li className="text-base">Excellent communication and customer service skills</li>
+                            </>
+                          )}
+                          {job.title === "Mortgage Loan Originator" && (
+                            <>
+                              <li className="text-base">Bachelor's degree preferred or equivalent experience</li>
+                              <li className="text-base">Active NMLS license required</li>
+                              <li className="text-base">2+ years of mortgage origination experience</li>
+                              <li className="text-base">Strong sales and relationship building skills</li>
+                              <li className="text-base">Knowledge of loan products and underwriting guidelines</li>
+                            </>
+                          )}
+                          {job.title === "Director of Employee Experience" && (
+                            <>
+                              <li className="text-base">Bachelor's degree in Human Resources, Business Administration, or related field</li>
+                              <li className="text-base">5+ years of HR leadership experience</li>
+                              <li className="text-base">Strong knowledge of employment law and HR best practices</li>
+                              <li className="text-base">Experience with HRIS systems and analytics</li>
+                              <li className="text-base">Excellent leadership and communication skills</li>
+                            </>
+                          )}
+                          {job.title === "National Recruiter" && (
+                            <>
+                              <li className="text-base">Bachelor's degree in Human Resources, Business, or related field</li>
+                              <li className="text-base">3+ years of recruiting experience, preferably in financial services</li>
+                              <li className="text-base">Experience with applicant tracking systems</li>
+                              <li className="text-base">Strong sourcing and interviewing skills</li>
+                              <li className="text-base">Ability to travel up to 25%</li>
+                            </>
+                          )}
+                          {job.title === "Regional Sales Manager" && (
+                            <>
+                              <li className="text-base">Bachelor's degree in Business, Sales, or related field</li>
+                              <li className="text-base">5+ years of sales management experience in mortgage industry</li>
+                              <li className="text-base">Proven track record of achieving sales targets</li>
+                              <li className="text-base">Strong leadership and team development skills</li>
+                              <li className="text-base">NMLS license preferred</li>
+                            </>
+                          )}
+                          {job.title === "Licensed Loan Partner (Qualification Specialist)" && (
+                            <>
+                              <li className="text-base">Active NMLS license required</li>
+                              <li className="text-base">2+ years of mortgage industry experience</li>
+                              <li className="text-base">Strong analytical and problem-solving skills</li>
+                              <li className="text-base">Knowledge of loan qualification criteria</li>
+                              <li className="text-base">Excellent verbal and written communication skills</li>
+                            </>
+                          )}
+                          {job.title === "Branch Operations Manager" && (
+                            <>
+                              <li className="text-base">Bachelor's degree in Business Administration or related field</li>
+                              <li className="text-base">3+ years of operations management experience</li>
+                              <li className="text-base">Knowledge of mortgage operations and compliance</li>
+                              <li className="text-base">Strong analytical and process improvement skills</li>
+                              <li className="text-base">Leadership and team management experience</li>
+                            </>
+                          )}
+                        </ul>
                       </div>
+
+                      <h2 className="text-xl font-semibold text-secondary-700 mb-4">Physical Demands</h2>
+                      <div className="text-secondary-500 mb-8">
+                        <ul className="list-disc list-inside space-y-2">
+                          <li className="text-base">Must be able to work in a normal office environment</li>
+                          <li className="text-base">Extended periods of computer work and data entry</li>
+                          <li className="text-base">May occasionally need to lift up to 20 pounds</li>
+                          {(job.title === "National Recruiter" || job.title === "Regional Sales Manager") && (
+                            <li className="text-base">Ability to travel as required for client meetings and events</li>
+                          )}
+                        </ul>
+                      </div>
+
+                      {job.niceToHave && (
+                        <>
+                          <h2 className="text-xl font-semibold text-secondary-700 mb-4">Nice to Have</h2>
+                          <div className="text-secondary-500 mb-8">
+                            <ul className="list-disc list-inside space-y-2">
+                              {job.niceToHave.split('\n').map((item, index) => (
+                                <li key={index} className="text-base">
+                                  {item.replace(/^[•\-*]\s*/, '')}
+                                </li>
+                              ))}
+                            </ul>
+                          </div>
+                        </>
+                      )}
                     </>
                   )}
                 </div>
