@@ -201,6 +201,10 @@ export default function JobDetailPage() {
                         <div className="mb-2 text-base">● At least 10 years of experience in Sales or Sales Management</div>
                         <div className="mb-2 text-base">● Strong written and verbal skills required</div>
                         <div className="mb-2 text-base">● Licensed to originate loans</div>
+                      </div>
+
+                      <h2 className="text-xl font-semibold text-secondary-700 mb-4">Physical Demands</h2>
+                      <div className="text-secondary-500 mb-8">
                         <div className="mb-2 text-base">● Must be able to work in a normal office environment</div>
                         <div className="mb-2 text-base">● May occasionally need to lift up to 20 pounds</div>
                       </div>
