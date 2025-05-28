@@ -188,6 +188,12 @@ export default function JobDetailPage() {
                         <li className="text-base">Submit management and financial reports as required.</li>
                         <li className="text-base">Perform other tasks as assigned by supervisor</li>
                       </ul>
+                    ) : job.title === "National Recruiter" ? (
+                      <ul className="list-disc list-inside space-y-2">
+                        <li className="text-base">Solicit and Interview Retail Branches who meet the Mid America Mortgage standards for hire</li>
+                        <li className="text-base">Solicit and Interview Individual Loan Officer Candidates who meet the Mid America Mortgage standards for hire</li>
+                        <li className="text-base">Adhere to documented policies and procedures</li>
+                      </ul>
                     ) : (
                       job.requirements ? (
                         <ul className="list-disc list-inside space-y-2">
