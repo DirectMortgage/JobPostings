@@ -298,7 +298,7 @@ export default function JobDetailPage() {
 
                   {job.title !== "Branch Manager" && (
                     <>
-                      <h2 className="text-xl font-semibold text-secondary-700 mb-4">{job.title === "Regional Sales Manager" ? "Qualifications" : "Job Requirements"}</h2>
+                      <h2 className="text-xl font-semibold text-secondary-700 mb-4">{job.title === "Regional Sales Manager" ? "Qualifications" : job.title === "Licensed Loan Partner (Qualification Specialist)" ? "Additional Role Expectations" : "Job Requirements"}</h2>
                       <div className="text-secondary-500 mb-8">
                         <ul className="list-disc list-inside space-y-2">
                           {job.title === "Processor" && (
@@ -359,11 +359,10 @@ export default function JobDetailPage() {
                           )}
                           {job.title === "Licensed Loan Partner (Qualification Specialist)" && (
                             <>
-                              <li className="text-base">Active NMLS license required</li>
-                              <li className="text-base">2+ years of mortgage industry experience</li>
-                              <li className="text-base">Strong analytical and problem-solving skills</li>
-                              <li className="text-base">Knowledge of loan qualification criteria</li>
-                              <li className="text-base">Excellent verbal and written communication skills</li>
+                              <li className="text-base"><span className="font-bold">Client Experience:</span> Serve as a concierge-level guide for borrowers and business partners.</li>
+                              <li className="text-base"><span className="font-bold">Professionalism:</span> Maintain high standards in verbal and written communications— professional, clear, and respectful at all times.</li>
+                              <li className="text-base"><span className="font-bold">Responsiveness:</span> Available for urgent borrower needs after hours via mobile email.</li>
+                              <li className="text-base"><span className="font-bold">Team Collaboration:</span> Work closely with loan processors, attorneys, title companies, and real estate professionals.</li>
                             </>
                           )}
                           {job.title === "Branch Operations Manager" && (
