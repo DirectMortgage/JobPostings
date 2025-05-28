@@ -157,8 +157,9 @@ export default function JobDetailPage() {
                 <div className="prose prose-sm max-w-none">
                   <h2 className="text-xl font-semibold text-secondary-700 mb-4">About the Role</h2>
                   <div className="text-secondary-500 mb-8 text-base leading-relaxed">
-                    {job.title === "Branch Manager" ? (
-                      <div>
+                    <p className="mb-4 bg-yellow-100 p-4 border">Job ID: {job.id} | Title: {job.title}</p>
+                    {job.id === 3 ? (
+                      <div className="bg-green-100 p-4 border border-green-300">
                         <p className="mb-4">Develop and implement strategies to generate loans from Real Estate Companies, Builders, Relocation Companies and The Public.</p>
                         <p className="mb-4">Recruit, hire & train and supervise Loan Officers and individuals involved in the loan production functions.</p>
                         <p className="mb-4">Develop compensation and incentive programs for production staff.</p>
